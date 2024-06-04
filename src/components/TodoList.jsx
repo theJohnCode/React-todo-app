@@ -4,11 +4,10 @@ import TodoItem from "./TodoItem";
 
 // eslint-disable-next-line react/prop-types
 export default function TodoList({ todos, setTodos, setEditedTodo, editedTodo }) {
-
-  console.log(todos);
+  const sortedTodos = todos.slice().sort((a,b) => Number(a.completed) - Number(b.completed));
   return (
     <ul id="todo-list">
-      {todos.map((todo, index) => (
+      {sortedTodos.map((todo, index) => (
         // @ts-ignore
         <TodoItem
           key={todo.id}
