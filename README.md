@@ -35,6 +35,8 @@ To get the React frontend up and running, please follow these steps:
    ```sh
    npm install
    ```
+   or
+   
    ```sh
    yarn
    ```
