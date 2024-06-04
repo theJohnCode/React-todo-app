@@ -36,7 +36,7 @@ To get the React frontend up and running, please follow these steps:
    npm install
    ```
    or
-   
+
    ```sh
    yarn
    ```
@@ -85,7 +85,7 @@ The following are the API endpoints provided by the backend:
   ```
 - **Mark a todo as completed:**
   ```
-  DELETE /api/todos/{id}
+  PUT /api/todos/{id}
   ```
 
 ## Contributing
